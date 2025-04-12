@@ -9,7 +9,6 @@ val Green = Color(0xFF84A59D)
 val Yollow = Color(0xFFF7EDE2)
 val YollowLingt = Color(0xFFFFFFF2)
 val Dark = Color(0x883D405D)
-
 @Immutable
 data class AppColours (
     val background: Color,
@@ -25,7 +24,6 @@ data class AppColours (
     val highlightSurface: Color,
     val onHighlightSurface: Color
 )
-
 val localAppColours = staticCompositionLocalOf {
     AppColours (
         background = Color.Unspecified,
@@ -49,6 +47,10 @@ val extendedColours = AppColours(
     onSarface = Color.DarkGray,
     seconderySurface = Color.Blue,
     onSecondarySurface = Color.White,
-    regularSurface = Color.Yellow
-
+    regularSurface = Color.Yellow,
+    onRagularSarface = Color.DarkGray,
+    actionSurface = Color.Yellow,
+    onActionSurface = Color.Blue,
+    highlightSurface = Color.Green,
+    onHighlightSurface = Color.White
 )
